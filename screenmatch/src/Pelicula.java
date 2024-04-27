@@ -3,8 +3,9 @@ public class Pelicula {
     int fechaDeLanzamiento;
     int duracionEnMinutos;
     boolean incluidoEnElPlan;
-    double sumaDeEvaluaciones = 0;
-    int totalDeIteraciones = 0;
+    //agrego private para que un tercero no pueda acceder a estas variables y de esa manera brindar seguridad
+    private double sumaDeEvaluaciones = 0;
+    private int totalDeIteraciones = 0;
 
 
     void fichaTecnica(){
@@ -22,6 +23,8 @@ public class Pelicula {
     void calcular_media(){
         System.out.println("La media es: " + sumaDeEvaluaciones / totalDeIteraciones);
     }
+    //Hago uso de void cuando no retorno un valor que usare en mi clase principal
+    //Y hago uso de otro tipo cuando si usare ese valor despues
 
 
 

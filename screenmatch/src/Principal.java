@@ -10,7 +10,14 @@ public class Principal {
         miPelicula.evalua(9);
         miPelicula.evalua(10);
 
-        System.out.println(miPelicula.sumaDeEvaluaciones);
+//        System.out.println(miPelicula.sumaDeEvaluaciones); //detecta el error
+        miPelicula.calcular_media();
+
+        System.out.println("*****************");
+
+//        miPelicula.sumaDeEvaluaciones = 2; detecta el error
+//        miPelicula.totalDeIteraciones = 1;
+
         miPelicula.calcular_media();
 
         Pelicula otraPelicula = new Pelicula();
